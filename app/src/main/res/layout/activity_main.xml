@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="My Activity Title"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:capitalize="words"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome to ALC 4.0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="Logo view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/andela"
+        android:background="#5488D1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button_andela"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="#12A757"
+        android:onClick="andelaSite"
+        android:text="About ALC"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView_logo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_logo" />
+
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#12A757"
+        android:onClick="myProfileButton"
+        android:text="My Profile"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/button_andela"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_andela"
+        app:layout_constraintTop_toBottomOf="@+id/button_andela" />
+</android.support.constraint.ConstraintLayout>
